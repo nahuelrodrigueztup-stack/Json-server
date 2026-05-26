@@ -1,0 +1,41 @@
+{
+  "alumnos": [
+    {
+      "id": "1",
+      "nombre": "Ana",
+      "apellido": "Gomez",
+      "edad": 20,
+      "email": "ana@gmail.com",
+      "comision": "A",
+      "activo": true
+    },
+    {
+      "id": "2",
+      "nombre": "Luis",
+      "apellido": "Perez",
+      "edad": 22,
+      "email": "luis@gmail.com",
+      "comision": "B",
+      "activo": true
+    },
+    {
+      "nombre": "Nahuel",
+      "apellido": "Federico Rodriguez",
+      "edad": "1232",
+      "email": "nahuelrodriguez.tup@gmail.com",
+      "comision": "123",
+      "activo": "true",
+      "id": "90xcEuFpAYM"
+    }
+  ],
+  "profesores": [
+    {
+      "id": "1",
+      "nombre": "Maria",
+      "apellido": "Lopez",
+      "edad": 35,
+      "email": "maria@gmail.com"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

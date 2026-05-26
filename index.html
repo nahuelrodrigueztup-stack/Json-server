@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tp-json-server</title>
+  </head>
+  <body>
+    <header>
+      <h1>TP JSON Server</h1>
+    </header>
+    <main>
+      <p>Bienvenido a la práctica de JSON Server.</p>
+      <p>Utiliza el comando <code>npm run server</code> para iniciar
+        el servidor JSON en el puerto 3000.</p>
+      <p>Luego, puedes acceder a los datos en <code>http://localhost:
+        3000</code>.</p>
+
+
+        <form id="formulario-alumnos">
+          <input type="hidden" id="id" placeholder="ID"/> -->
+          <input type="text" id="nombre" placeholder="Nombre" required />
+          <input type="text" id="apellido" placeholder="Apellido" required />
+          <input type="number" id="edad" placeholder="Edad" required />
+          <input type="email" id="email" placeholder="Email" required />
+          <input type="text" id="comision" placeholder="Comisión" required />
+          <label for="activo">Activo:</label>
+          <select id="activo">
+            <option value="true">Sí</option>
+            <option value="false">No</option>
+          </select>
+          <button type="submit" id="boton-submit">Agregar Alumno</button>
+        </form>
+
+
+
+      <table>
+       <thead>
+          <tr>
+            <th>id</th>
+            <th>nombre</th>
+            <th>apellido</th>
+            <th>edad</th>
+            <th>email</th>
+            <th>comision</th>
+            <th>activo</th>
+            <th>acciones</th>
+          </tr>
+       </thead>
+       <tbody id="filas-alumnos">
+          <!-- Las filas de alumnos se agregarán aquí dinámicamente -->
+       </tbody>
+      </table>
+    </main>
+    <footer>
+      <p>&copy; 2024 TP JSON Server</p>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
