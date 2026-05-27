@@ -54,7 +54,7 @@ filasAlumnos.addEventListener("click", (e) => {
 
   idEnEdicion = boton.dataset.id;
   let accion = boton.dataset.accion;
-  console.log(id, accion);
+  console.log("accion seleccionada en conflicto con main:", accion);
 
   if (accion === 'eliminar') {
     confirm("¿Estas seguro que quieres eliminar este alumno?") && eliminarAlumno(idEnEdicion);
