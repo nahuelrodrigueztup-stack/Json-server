@@ -1,10 +1,11 @@
 let filasAlumnos = document.getElementById("filas-alumnos");
-let formulario = document.getElementById("formulario-alumnos");
+let form = document.getElementById("formulario-alumnos");
 let botonSubmit = document.getElementById("boton-submit");
 let arrayAlumnos = [];
 let idEnEdicion = null;
 
-formulario.addEventListener("submit", (e) =>handleSubmit(e));
+console.log('hola mundo');
+form.addEventListener("submit", (event) =>handleSubmit(event));
   //puedo agregar atributos personalizados a cualquier etiqueta html y ponerles cualquier nombre,
   //sin embargo no es una buena practica utilizar nombres de atributos como accion, o nombre o identificador etc, 
   //ya que pueden entrar en conflicto con atributos nativos de html, y ademas
